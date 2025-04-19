@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        
+        th.nomearea {
+            background-color: white;
+            color: black;
+        }
+
+        th.medias {
+            text-align: left;
+        }
+
+        td.medianota {
+            background-color: gray;
+            color: white;  
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left; 
+        }
+
+        td.nota {
+            text-align: center;
+        }
+
+        .area {
+            background-color: aqua;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="area">
+                <col class="disciplina">
+                <col class="notas">
+                <col class="media">
+            </colgroup>
+            <caption>
+                Medias das Disciplinas
+            </caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                        <tr>
+                            <th scope="col">Nota 1</th>
+                            <th scope="col">Nota 2</th>
+                        </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup" class="nomearea">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" class="medias">Médias de Exatas</th>
+                    <td class="medianota">0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup" class="nomearea">Humanas</th>
+                    <td>História</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" class="medias">Médias de Exatas</th>
+                    <td class="medianota">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
